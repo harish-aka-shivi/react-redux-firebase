@@ -27,13 +27,13 @@ function Todos() {
     return 'Todo list is empty'
   }
 
-  return todos.reverse().map(({ value: todo, key }, ind) => (
+  return todos.reverse().map(({ id }, ind) => (
     <TodoItem
-      key={`${key}-${ind}`}
-      id={key}
-      {...todo}
+      key={`${id}-${ind}`}
+      id={id}
     />
   ))
+
 }
 
 export default Todos

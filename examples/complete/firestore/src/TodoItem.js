@@ -11,8 +11,9 @@ function TodoItem({ id }) {
   function toggleDone() {
     firestore.update(`todos/${id}`, { done: !todo.done })
   }
+  
   function deleteTodo() {
-    return firestore.remove(`todos/${id}`)
+    return firestore.delete(`todos/${id}`)
   }
 
   return (

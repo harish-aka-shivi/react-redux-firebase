@@ -18,7 +18,8 @@
     "react-redux-firebase": "next",
     "recompose": "^0.30.0",
     "redux": "^4.0.0",
-    "redux-firestore": "latest"
+    "redux-firestore": "latest",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "react-scripts": "2.1.3"
